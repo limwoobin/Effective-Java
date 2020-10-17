@@ -42,4 +42,9 @@ public final class PhoneNumber {
 //        한줄짜리 hashcode method (성능이 살짝 아쉽다)
 //        return Objects.hash(areaCode , prefix , lineNum);
     }
+
+    @Override
+    public String toString() {
+        return String.format("%03d-%03d-%04d" , areaCode , prefix , lineNum);
+    }
 }
