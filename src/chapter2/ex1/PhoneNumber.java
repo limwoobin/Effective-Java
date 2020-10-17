@@ -1,6 +1,4 @@
-package chapter1.ex8;
-
-import java.util.Objects;
+package chapter2.ex1;
 
 public final class PhoneNumber {
     private final short areaCode , prefix , lineNum;

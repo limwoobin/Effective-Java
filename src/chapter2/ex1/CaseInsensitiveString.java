@@ -1,4 +1,4 @@
-package chapter1.ex8;
+package chapter2.ex1;
 
 public class CaseInsensitiveString {
     private final String s;
