@@ -1,16 +1,26 @@
 public class Test {
+    private static int arr[][] = {{1,3},{3,1},{3,5},{2,5},{5,3}};
+
     public static void main(String[] args) {
-        instanceTest("A");
-        instanceTest(50);
-    }
+        int cnt = 0;
+        int index = 0;
 
-    static void instanceTest(Object o) {
-        if (o instanceof String) {
-            System.out.println("String True");
+        for (int array[] : arr) {
+            int num = array[0];
+            int num2 = array[1];
+            for (int j=index; j<arr.length-1; j++) {
+                int val = arr[j+1][0];
+                int val2 = arr[j+1][1];
+
+                if (num == val2 && num2 == val) {
+                    cnt++;
+                    break;
+                }
+
+            }
+            index++;
         }
 
-        if (o instanceof Integer) {
-            System.out.println("Integer True");
-        }
+        System.out.println(cnt);
     }
 }
