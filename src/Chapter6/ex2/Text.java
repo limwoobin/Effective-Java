@@ -1,0 +1,15 @@
+package Chapter6.ex2;
+
+import java.util.Set;
+
+public class Text {
+    public enum Style {
+        BOLD,
+        ITALIC,
+        UNDERLINE,
+        STRIKETHROUGH;
+    }
+
+    public void applyStyles(Set<Style> styles) {}
+
+}
