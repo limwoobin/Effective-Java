@@ -1,4 +1,4 @@
-package Chapter8.ex1;
+package Chapter8.item50;
 
 import java.util.Date;
 

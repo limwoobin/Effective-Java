@@ -1,4 +1,4 @@
-package Chapter8.ex2;
+package Chapter8.item52;
 
 import java.math.BigInteger;
 import java.util.*;
