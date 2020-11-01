@@ -1,4 +1,4 @@
-package Chapter7.ex3;
+package Chapter7.item47;
 
 import java.util.Arrays;
 import java.util.Collections;

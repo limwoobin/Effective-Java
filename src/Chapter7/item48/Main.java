@@ -1,4 +1,4 @@
-package Chapter7.ex4;
+package Chapter7.item48;
 
 import java.math.BigInteger;
 import java.util.stream.LongStream;
