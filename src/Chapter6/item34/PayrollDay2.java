@@ -1,7 +1,7 @@
-package Chapter6.ex1;
+package Chapter6.item34;
 
-import static Chapter6.ex1.PayrollDay2.PayType.WEEKDAY;
-import static Chapter6.ex1.PayrollDay2.PayType.WEEKEND;
+import static Chapter6.item34.PayrollDay2.PayType.WEEKDAY;
+import static Chapter6.item34.PayrollDay2.PayType.WEEKEND;
 
 // 전략 열거 타입 패턴
 public enum PayrollDay2 {

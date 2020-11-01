@@ -1,4 +1,4 @@
-package Chapter6.ex1;
+package Chapter6.item34;
 
 // 깨지기 쉬운 코드
 public enum Operation {

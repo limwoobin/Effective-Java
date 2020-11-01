@@ -1,4 +1,4 @@
-package Chapter6.ex4;
+package Chapter6.item38;
 
 // 확장 가능 열거타입
 public enum ExtendedOperation implements Operation {

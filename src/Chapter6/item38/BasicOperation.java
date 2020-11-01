@@ -1,6 +1,7 @@
-package Chapter6.ex1;
+package Chapter6.item38;
 
-public enum Operation3 {
+// 인터페이스를 이용해 확장 가능 열거타입 흉내.
+public enum BasicOperation implements Operation {
     PLUS("+") {
         @Override
         public double apply(double x, double y) {
@@ -26,17 +27,14 @@ public enum Operation3 {
         }
     };
 
-
     private final String symbol;
 
-    Operation3(String symbol) {
+    BasicOperation(String symbol) {
         this.symbol = symbol;
     }
 
     @Override
     public String toString() {
-        return symbol;
+        return this.symbol;
     }
-
-    public abstract double apply(double x , double y);
 }

@@ -1,32 +1,42 @@
-package Chapter6.ex1;
+package Chapter6.item34;
 
-// 상수별 메서드 구현을 활용한 열거 타입
-public enum Operation2 {
-    PLUS {
+public enum Operation3 {
+    PLUS("+") {
         @Override
         public double apply(double x, double y) {
             return x + y;
         }
     },
-    MINUS {
+    MINUS("-") {
         @Override
         public double apply(double x, double y) {
             return x - y;
         }
     },
-    TIMES {
+    TIMES("*") {
         @Override
         public double apply(double x, double y) {
             return x * y;
         }
     },
-    DIVIDE {
+    DIVIDE("/") {
         @Override
         public double apply(double x, double y) {
             return x / y;
         }
     };
 
+
+    private final String symbol;
+
+    Operation3(String symbol) {
+        this.symbol = symbol;
+    }
+
+    @Override
+    public String toString() {
+        return symbol;
+    }
 
     public abstract double apply(double x , double y);
 }

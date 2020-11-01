@@ -1,4 +1,4 @@
-package Chapter6.ex1;
+package Chapter6.item34;
 
 // 값에 따라 분기하여 코드를 공유하는 타입 - 좋은 방법은 아님
 public enum  PayrollDay {

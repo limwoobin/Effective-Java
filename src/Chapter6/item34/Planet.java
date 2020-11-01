@@ -1,4 +1,4 @@
-package Chapter6.ex1;
+package Chapter6.item34;
 
 public enum Planet {
     MERCURY(3.302e+23 , 2.439e6),

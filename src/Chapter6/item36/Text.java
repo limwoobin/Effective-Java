@@ -1,4 +1,4 @@
-package Chapter6.ex2;
+package Chapter6.item36;
 
 import java.util.Set;
 

@@ -1,4 +1,4 @@
-package Chapter6.ex3;
+package Chapter6.item37;
 
 public enum  DayOfWeek {
     MON , TUE , WED , THU , FRI , SAT , SUN;
