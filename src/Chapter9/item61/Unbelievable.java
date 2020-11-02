@@ -20,7 +20,7 @@ public class Unbelievable {
     }
 
     public static void main(String[] args) {
-//        intTest();
+        intTest();
         longTest();
     }
 }
