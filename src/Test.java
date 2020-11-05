@@ -1,46 +1,42 @@
 
 
 public class Test {
-    public static void main(String[] args) {
-        Runnable runnable = new RunnableTest2();
-        Thread thread = new Thread(runnable);
-        Thread thread2 = new Thread(runnable);
+    private static int val;
+    private int val2;
 
-        thread.start();
-        thread2.start();
+    static class StaticInner {
+        private static int s1 = val;
     }
-}
 
-class Account_2 {
-    int balance = 1000;
+    class Inner {
+        private int a1 = val;
+        private int a2 = val2;
+    }
 
-    public synchronized void withdraw(int money) {
-        while (balance < money) {
-            try {
-                wait();
-            } catch (Exception e) {
+    public void local(int param) {
+        int d = 20;
+
+        class LocalInner {
+            int localVar;
+
+            void localMethod() {
+                System.out.println(localVar);
+                System.out.println(param);
+                System.out.println(val);
+                System.out.println(val2);
+                System.out.println(d);
             }
         }
-        balance -= money;
+
+        LocalInner localInner = new LocalInner();
+        localInner.localMethod();
     }
 
-    public synchronized void deposit(int money) {
-        balance += money;
-        notify();
-    }
-}
-
-class RunnableTest2 implements Runnable {
-    Account_2 account = new Account_2();
-
-    public void run() {
-        while (account.balance > 0) {
-            int money = (int) (Math.random() * 3 + 1) * 100;
-            account.withdraw(money);
-            System.out.println("balance : " + account.balance);
-        }
-        account.deposit(1000);
+    public static void main(String[] args) {
+        Test test = new Test();
+        test.local(100);
     }
 }
+
 
 
