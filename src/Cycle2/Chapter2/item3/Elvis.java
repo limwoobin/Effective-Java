@@ -1,4 +1,4 @@
-package Cycle2.item3;
+package Cycle2.Chapter2.item3;
 
 // public static final 필드 방식의 싱글턴
 public class Elvis {

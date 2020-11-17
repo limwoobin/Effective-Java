@@ -1,4 +1,4 @@
-package Cycle2.Item2;
+package Cycle2.Chapter2.Item2;
 
 // 점층적 생성자 패턴
 public class NutritionFacts {

@@ -1,4 +1,4 @@
-package Cycle2.Item2.exam;
+package Cycle2.Chapter2.Item2.exam;
 
 public class Test {
     public static void main(String[] args) {

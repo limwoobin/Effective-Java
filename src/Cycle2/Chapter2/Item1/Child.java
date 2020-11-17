@@ -1,4 +1,4 @@
-package Cycle2.Item1;
+package Cycle2.Chapter2.Item1;
 
 public class Child {
     private String name;

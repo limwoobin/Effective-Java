@@ -1,4 +1,4 @@
-package Cycle2.Item2.exam;
+package Cycle2.Chapter2.Item2.exam;
 
 import java.util.EnumSet;
 import java.util.Objects;

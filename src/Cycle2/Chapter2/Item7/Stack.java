@@ -1,4 +1,4 @@
-package Cycle2.Item7;
+package Cycle2.Chapter2.Item7;
 
 import java.util.Arrays;
 import java.util.EmptyStackException;

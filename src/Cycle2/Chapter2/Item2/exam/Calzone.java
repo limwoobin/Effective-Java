@@ -1,4 +1,4 @@
-package Cycle2.Item2.exam;
+package Cycle2.Chapter2.Item2.exam;
 
 public class Calzone extends Pizza {
     private final boolean sauceInside;

@@ -1,4 +1,4 @@
-package Cycle2.Item2;
+package Cycle2.Chapter2.Item2;
 
 // 점층적 생성자 패턴과 자바빈즈패턴의 장점만 모아놓은 빌더패턴.
 public class NutritionFacts3 {

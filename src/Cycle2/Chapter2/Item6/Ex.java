@@ -1,4 +1,4 @@
-package Cycle2.Item6;
+package Cycle2.Chapter2.Item6;
 
 public class Ex {
 

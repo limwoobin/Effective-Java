@@ -1,4 +1,4 @@
-package Cycle2.Item2;
+package Cycle2.Chapter2.Item2;
 
 // 자바 빈즈 패턴 - 일관성이 깨지고 불변으로 만들 수 없다.
 public class NutritionFacts2 {
