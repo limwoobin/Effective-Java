@@ -10,13 +10,11 @@ public class Test2 {
         System.out.println(c instanceof Child);
         System.out.println(p instanceof Parent);
 
-
-        Child child = (Child) p;
-        child.childPrint();
-        child.parentPrint();
-
         Parent parent = new Child();
         parent.parentPrint();
+
+        Ftest ftest = new Ftest();
+        ftest.fPrint();
     }
 }
 
@@ -30,5 +28,11 @@ class Child extends Parent {
 class Parent {
     void parentPrint() {
         System.out.println("parent~");
+    }
+}
+
+final class Ftest {
+    final void fPrint() {
+        System.out.println("fPrint~");
     }
 }
