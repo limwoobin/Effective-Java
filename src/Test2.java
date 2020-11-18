@@ -17,6 +17,7 @@ public class Test2 {
 
         Parent parent = new Child();
         parent.parentPrint();
+
     }
 }
 
