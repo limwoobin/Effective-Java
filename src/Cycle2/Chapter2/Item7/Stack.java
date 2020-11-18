@@ -9,7 +9,7 @@ public class Stack {
     private static final int DEFAULT_INITIAL_CAPACITY = 16;
 
     public Stack() {
-        elements = new Object[DEFAULT_INITIAL_CAPACITY];
+        this.elements = new Object[DEFAULT_INITIAL_CAPACITY];
     }
 
     public void push(Object e) {
