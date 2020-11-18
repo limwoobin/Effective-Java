@@ -8,10 +8,6 @@ public class ColorPoint extends Point {
         this.color = color;
     }
 
-    private enum Color {
-        BLUE , BLACK , RED
-    }
-
     // 잘못된 코드 - 대칭성 위배.
     @Override
     public boolean equals(Object o) {
