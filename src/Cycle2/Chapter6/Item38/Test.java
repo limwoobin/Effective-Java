@@ -18,6 +18,10 @@ public class Test {
         }
     }
 
+    private static void extendedTest(Operation op , double x , double y) {
+        System.out.printf("%f %s %f = %f%n" , x , op , y , op.apply(x , y));
+    }
+
     public static void main(String[] args) {
         double x = 4.0;
         double y = 5.5;
@@ -26,5 +30,9 @@ public class Test {
         System.out.println("--------------------------------");
 
         test2(Arrays.asList(ExtendedOperation.values()) , x , y);
+
+        System.out.println("--------------------------------");
+        extendedTest(ExtendedOperation.EXP , x , y);
+        extendedTest(ExtendedOperation.REMAINDER , x , y);
     }
 }
