@@ -10,7 +10,7 @@ public class asSubclass {
         try {
             annotationType = Class.forName(annotationTypeName);
         } catch (Exception ex) {
-            throw new AssertionError();
+            throw new IllegalArgumentException(ex);
         }
 
         return element.getAnnotation(annotationType.asSubclass(Annotation.class));
