@@ -25,6 +25,13 @@ public class StreamToMap {
             new Album(c, 28)
         );
 
+        List<Album> albums2 = Arrays.asList(
+                new Album(a, 11),
+//                new Album(a, 9),
+                new Album(b, 12),
+                new Album(c, 28)
+        );
+
         // toMap
         Map<Artist, Album> topHits = albums.stream().collect(
                         toMap(Album::artist,
@@ -42,6 +49,13 @@ public class StreamToMap {
                         }));
 
         System.out.println(topHits2);
+
+        // toMap3
+        Map<Artist, Map<Artist , List<Album>>> topHits3 = albums.stream().collect(
+                groupingBy(Album::artist ,
+                groupingBy(Album::artist)));
+
+        System.out.println(topHits3);
 
         // toSet
         Map<Artist , Set<Album>> artistSet = albums.stream().collect(

@@ -1,6 +1,10 @@
 
 
 public class Test2 {
+    static Parent methodTest() {
+        return new Child();
+    }
+
     public static void main(String[] args) {
         Child c = new Child();
         Parent p = new Parent();
@@ -15,6 +19,9 @@ public class Test2 {
 
         Ftest ftest = new Ftest();
         ftest.fPrint();
+
+        Parent pp = methodTest();
+        pp.parentPrint();
     }
 }
 
