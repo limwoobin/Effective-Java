@@ -33,6 +33,5 @@ public class Ex2 {
         Map<String , Set<String>> collect2 = stringList.stream().collect(
                 groupingBy(fruit -> fruit , toCollection(HashSet::new)));
         System.out.println(collect2.toString());
-
     }
 }
