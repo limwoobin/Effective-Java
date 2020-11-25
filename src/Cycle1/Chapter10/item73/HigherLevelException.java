@@ -1,4 +1,4 @@
-package Cycle1.item73;
+package Cycle1.Chapter10.item73;
 
 // 예외 연쇄용 생성자
 public class HigherLevelException extends Exception {
