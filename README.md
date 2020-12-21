@@ -1,2 +1,3 @@
 # Effective-Java
-Effective Java Study
+
+Effective Java Study - 2회독
